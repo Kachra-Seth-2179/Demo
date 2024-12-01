@@ -4,9 +4,9 @@ services:
     ports:
       - "5000:5000"
     environment:
-      DB_HOST: azureflaskapp-server.mysql.database.azure.com
-      DB_USER: yzruefqhpn
-      DB_PASSWORD: mYw$1vUsZMo0y2Z9
-      DB_NAME: azureflaskapp-database
+      AZURE_MYSQL_HOST: azureflaskapp-server.mysql.database.azure.com
+      AZURE_MYSQL_USER: yzruefqhpn
+      AZURE_MYSQL_PASSWORD: mYw$1vUsZMo0y2Z9
+      AZURE_MYSQL_NAME: azureflaskapp-database
 
 
