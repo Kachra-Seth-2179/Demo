@@ -1,0 +1,14 @@
+# Ignore virtual environment directories
+venv/
+.env/
+
+# Ignore Python bytecode
+*.pyc
+*.pyo
+
+# Ignore local configuration files (e.g., database config)
+config.py
+
+# Ignore IDE files (e.g., VS Code, PyCharm)
+.vscode/
+.idea/
