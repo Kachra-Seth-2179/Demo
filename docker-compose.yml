@@ -2,7 +2,7 @@ services:
   web:
     build: .
     ports:
-      - "5000:5000"
+      - "80:5000"
     environment:
       AZURE_MYSQL_HOST: azureflaskapp-server.mysql.database.azure.com
       AZURE_MYSQL_USER: yzruefqhpn
