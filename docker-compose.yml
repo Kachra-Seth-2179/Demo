@@ -4,24 +4,9 @@ services:
     ports:
       - "5000:5000"
     environment:
-      DB_HOST: db
-      DB_USER: tester
-      DB_PASSWORD: password
-      DB_NAME: newdatabase
-    depends_on: 
-      - db
+      DB_HOST: azureflaskapp-server.mysql.database.azure.com
+      DB_USER: yzruefqhpn
+      DB_PASSWORD: mYw$1vUsZMo0y2Z9
+      DB_NAME: azureflaskapp-database
 
-  db:
-    image: mysql:latest
-    environment:
-      MYSQL_DATABASE: newdatabase
-      MYSQL_USER: tester
-      MYSQL_PASSWORD: password
-      MYSQL_ROOT_PASSWORD: rootpassword
-    ports:
-      - "3308:3308"
-    volumes:
-      - db_data:/var/lib/mysql
 
-volumes:
-  db_data:
