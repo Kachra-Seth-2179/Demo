@@ -5,10 +5,10 @@ import mysql.connector
 app = Flask(__name__)
 
 db_config = {
-    'host': os.getenv('DB_HOST'),
-    'user': os.getenv('DB_USER'),
-    'password': os.getenv('DB_PASSWORD'),
-    'database': os.getenv('DB_NAME')
+    'host': os.getenv('AZURE_MYSQL_HOST'),
+    'user': os.getenv('AZURE_MYSQL_USER'),
+    'password': os.getenv('AZURE_MYSQL_PASSWORD'),
+    'database': os.getenv('AZURE_MYSQL_NAME')
 }
 
 @app.route('/')
